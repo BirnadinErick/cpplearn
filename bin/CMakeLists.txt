@@ -1,0 +1,2 @@
+add_executable(bubblesort_exe bubblesort.cpp)
+target_link_libraries(bubblesort_exe PRIVATE cxx_setup bubblesort)
