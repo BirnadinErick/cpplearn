@@ -2,6 +2,7 @@
 
 namespace cpplearn {
 namespace bubblesort {
-	void printhello();
-}
+void printhello();
+int get69();
+}  // namespace bubblesort
 }  // namespace cpplearn
