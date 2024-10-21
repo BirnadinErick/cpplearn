@@ -7,7 +7,7 @@ project(cpplearn VERSION 0.1.0
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 if (NOT CMAKE_BUILD_TYPE)
-	set(CMAKE_BUILD_TYPE Release CACHE STRING "" FORCE)
+	set(CMAKE_BUILD_TYPE Debug CACHE STRING "" FORCE)
 endif()
 
 add_library(cxx_setup INTERFACE)
