@@ -7,8 +7,18 @@ extern "C" {
 }
 
 TEST(TestLuluConfigParser, parse_empty_config) {
-    const char* config_str = "";
-    LuluConfig* config = (LuluConfig*)malloc(sizeof(LuluConfig));
+    char* config_str = (char*)"";
+    auto config = (LuluConfig*)malloc(sizeof(LuluConfig));
+    parse_config(config, config_str);
+
+    const LuluConfig ref_config = {.project_name = (char*)""};
+
+    EXPECT_STREQ(config->project_name, ref_config.project_name);
+}
+
+TEST(TestLuluConfigParser, parse_empty_project_name) {
+    char* config_str = (char*)"project_name  \n";
+    auto config = (LuluConfig*)malloc(sizeof(LuluConfig));
     parse_config(config, config_str);
 
     const LuluConfig ref_config = {.project_name = (char*)""};
