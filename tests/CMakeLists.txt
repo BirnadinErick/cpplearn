@@ -11,9 +11,13 @@ if (BUILD_TESTING)
 	add_executable(chap_funcs_test chap_funcs_test.cpp)
 	target_link_libraries(chap_funcs_test PRIVATE GTest::gtest_main chap_funcs)
 
+	add_executable(chap_arr_test chap_arr_test.cpp)
+	target_link_libraries(chap_arr_test PRIVATE GTest::gtest_main chap_arr)
+
 	include(GoogleTest)
 	gtest_discover_tests(bubblesort_test)
 	gtest_discover_tests(reversestr_test)
 	gtest_discover_tests(lulu_test)
 	gtest_discover_tests(chap_funcs_test)
+	gtest_discover_tests(chap_arr_test)
 endif()

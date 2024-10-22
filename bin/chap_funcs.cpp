@@ -1,5 +1,6 @@
 #include <cpplearn/chap_funcs/chap_funcs.h>
 
+#include <cstdlib>
 #include <iomanip>
 #include <iostream>
 #include <string>
@@ -30,4 +31,6 @@ int main(int argc, char** argv) {
     std::cout << std::fixed << std::setprecision(2) << cpplearn::ex::cir_area(r)
               << " square units";
     std::cerr << std::endl;
+
+    return EXIT_SUCCESS;
 }
