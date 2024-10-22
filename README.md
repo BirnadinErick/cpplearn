@@ -2,6 +2,9 @@
 
 > although it says cpp, I also learn C b4 any CPP
 
+ 
+> [![Run CMake Test](https://github.com/BirnadinErick/cpplearn/actions/workflows/cmake-single-platform.yml/badge.svg?branch=main&event=push)](https://github.com/BirnadinErick/cpplearn/actions/workflows/cmake-single-platform.yml)
+
 ## Scratchpad
 
 1. lulu: CLI helper to bootstrap new projects in this dir
